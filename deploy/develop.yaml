@@ -1,0 +1,22 @@
+image:
+  repository: docker.pkg.github.com/sre-priscilla/platform
+  pullPolicy: Always
+  tag: "latest"
+
+serviceAccount:
+  create: false
+
+configMaps:
+  config.yaml: |-
+    http:
+      port: 8080
+
+    mysql:
+      host: "mysql.state"
+      port: 3306
+      username: root
+      password: "123456"
+
+    redis:
+      host: "redis.state"
+      port: 6379
