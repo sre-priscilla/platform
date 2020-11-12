@@ -1,2 +1,2 @@
-FROM busybox:glibc
+FROM ubuntu
 COPY platform /bin/platform
