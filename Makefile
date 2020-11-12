@@ -8,4 +8,4 @@ build:
 
 .PHONY: image
 image:
-	cd build && docker build -t docker.pkg.github.com/sre-priscilla/platform .
+	cd build && docker build -t registry.cn-shanghai.aliyuncs.com/ayane/platform .
